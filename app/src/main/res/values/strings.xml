@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+    <string name="title">Constanța</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="parks">Parks</string>
+    <string name="attractions">Attractions</string>
+    <string name="hotels">Hotels</string>
+    <string name="transportation">Transportation</string>
+
+    <string name="seeRoute">See route</string>
+</resources>
