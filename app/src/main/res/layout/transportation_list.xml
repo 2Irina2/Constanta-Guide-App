@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ListView
-    android:id="@+id/list"
+    android:id="@+id/transp_list"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"

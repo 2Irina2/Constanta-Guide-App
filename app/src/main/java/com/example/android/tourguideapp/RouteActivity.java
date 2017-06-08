@@ -13,7 +13,7 @@ public class RouteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_route);
 
         ImageView routeImage = (ImageView) findViewById(R.id.route_image);
-        // How do I set the resource id?
-        // routeImage.setImageResource();
+        int routeId = getIntent().getIntExtra("ID", R.drawable.background);
+        routeImage.setImageResource(routeId);
     }
 }

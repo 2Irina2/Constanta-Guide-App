@@ -21,5 +21,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(transportationIntent);
             }
         });
+
+        Button restaurantsButton = (Button) findViewById(R.id.restaurants_button);
+        restaurantsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent restaurantsIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
+                startActivity(restaurantsIntent);
+            }
+        });
     }
 }

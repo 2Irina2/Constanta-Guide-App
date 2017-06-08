@@ -31,7 +31,9 @@
         <activity
             android:name=".TransportationActivity"
             android:label="@string/transportation" />
-        <activity android:name=".RouteActivity"></activity>
+        <activity
+            android:name=".RouteActivity"
+            android:label="@string/route"/>
     </application>
 
 </manifest>

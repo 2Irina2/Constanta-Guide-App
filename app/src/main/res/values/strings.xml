@@ -6,6 +6,8 @@
     <string name="attractions">Attractions</string>
     <string name="hotels">Hotels</string>
     <string name="transportation">Transportation</string>
+    <string name="route">Route</string>
 
     <string name="seeRoute">See route</string>
+    <string name="getLocation">Get location</string>
 </resources>

@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="titleColor">#e0f7fa</color>
+    <color name="normal_list_item_color">#e1f5fe</color>
 </resources>
