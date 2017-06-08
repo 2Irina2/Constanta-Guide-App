@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import static com.example.android.tourguideapp.R.string.parks;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -28,6 +30,33 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent restaurantsIntent = new Intent(MainActivity.this, RestaurantsActivity.class);
                 startActivity(restaurantsIntent);
+            }
+        });
+
+        Button parksButton = (Button) findViewById(R.id.parks_button);
+        parksButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent parksIntent = new Intent(MainActivity.this, ParksActivity.class);
+                startActivity(parksIntent);
+            }
+        });
+
+        Button hotelsButton = (Button) findViewById(R.id.hotels_button);
+        hotelsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent hotelsIntent = new Intent(MainActivity.this, HotelsActivity.class);
+                startActivity(hotelsIntent);
+            }
+        });
+
+        Button attractionsButton = (Button) findViewById(R.id.attractions_button);
+        attractionsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent attractionsIntent = new Intent(MainActivity.this, AttractionsActivity.class);
+                startActivity(attractionsIntent);
             }
         });
     }

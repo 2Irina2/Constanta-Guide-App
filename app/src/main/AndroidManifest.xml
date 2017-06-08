@@ -18,19 +18,24 @@
         </activity>
         <activity
             android:name=".AttractionsActivity"
-            android:label="@string/attractions" />
+            android:label="@string/attractions"
+            android:parentActivityName="com.example.android.tourguideapp.MainActivity"/>
         <activity
             android:name=".ParksActivity"
-            android:label="@string/parks" />
+            android:label="@string/parks"
+            android:parentActivityName="com.example.android.tourguideapp.MainActivity"/>
         <activity
             android:name=".RestaurantsActivity"
-            android:label="@string/restaurants" />
+            android:label="@string/restaurants"
+            android:parentActivityName="com.example.android.tourguideapp.MainActivity"/>
         <activity
             android:name=".HotelsActivity"
-            android:label="@string/hotels" />
+            android:label="@string/hotels"
+            android:parentActivityName="com.example.android.tourguideapp.MainActivity"/>
         <activity
             android:name=".TransportationActivity"
-            android:label="@string/transportation" />
+            android:label="@string/transportation"
+            android:parentActivityName="com.example.android.tourguideapp.MainActivity"/>
         <activity
             android:name=".RouteActivity"
             android:label="@string/route"/>
