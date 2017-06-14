@@ -24,13 +24,13 @@ public class HotelsActivity extends AppCompatActivity {
         setContentView(R.layout.normal_list);
 
         final ArrayList<Place> hotels = new ArrayList<Place>();
-        hotels.add(new Place("Hotel Jolie", "0241 697 638", R.drawable.jolie, "44.201298", "28.645268"));
-        hotels.add(new Place("Hotel Royal", "0241 542 690", R.drawable.royal, "44.199137", "28.646769"));
-        hotels.add(new Place("Hotel Maryiotis", "0241 629 999", R.drawable.maryiotis, "44.202337", "28.645476"));
-        hotels.add(new Place("Hotel Golden Rose", "0341 445 302", R.drawable.golden_rose, "44.203958", "28.642707"));
-        hotels.add(new Place("Hotel Ibis", "0241 508 050", R.drawable.ibis, "44.177633", "28.654693"));
-        hotels.add(new Place("Hotel Austin", "0735 844 882", R.drawable.austin, "44.212075", "28.620630"));
-        hotels.add(new Place("Hotel Havana", "0721 123 424", R.drawable.havana, "44.180788", "28.640530"));
+        hotels.add(new Place(R.string.hotel_jolie, R.string.number_jolie, R.drawable.jolie, R.string.latitude_jolie, R.string.longitude_jolie));
+        hotels.add(new Place(R.string.hotel_royal, R.string.number_royal, R.drawable.royal, R.string.latitude_royal, R.string.longitude_royal));
+        hotels.add(new Place(R.string.hotel_maryiotis, R.string.number_maryiotis, R.drawable.maryiotis, R.string.latitude_maryiotis, R.string.longitude_maryiotis));
+        hotels.add(new Place(R.string.hotel_golden_rose, R.string.number_golden_rose, R.drawable.golden_rose, R.string.latitude_golden_rose, R.string.longitude_golden_rose));
+        hotels.add(new Place(R.string.hotel_ibis, R.string.number_ibis, R.drawable.ibis, R.string.latitude_ibis, R.string.longitude_ibis));
+        hotels.add(new Place(R.string.hotel_austin, R.string.number_austin, R.drawable.austin, R.string.latitude_austin, R.string.longitude_austin));
+        hotels.add(new Place(R.string.hotel_havana, R.string.number_havana, R.drawable.havana, R.string.latitude_havana, R.string.longitude_havana));
 
         final PlaceAdapter pAdapter = new PlaceAdapter(this, hotels);
 

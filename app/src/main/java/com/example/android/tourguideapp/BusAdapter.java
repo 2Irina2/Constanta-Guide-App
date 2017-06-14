@@ -33,7 +33,7 @@ public class BusAdapter extends ArrayAdapter<Bus> {
         Bus currentBus = getItem(position);
 
         TextView busNumber = (TextView) listItemView.findViewById(R.id.bus_number);
-        busNumber.setText(currentBus.getBusNumber());
+        busNumber.setText(getContext().getString(currentBus.getBusNumber()));
 
 
         return listItemView;

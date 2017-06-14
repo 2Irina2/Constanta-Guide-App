@@ -23,16 +23,16 @@ public class RestaurantsActivity extends AppCompatActivity {
         setContentView(R.layout.normal_list);
 
         final ArrayList<Place> restaurants = new ArrayList<Place>();
-        restaurants.add(new Place("Marco Polo", "0241 617 357", R.drawable.marco_polo, "44.182493", "28.649354"));
-        restaurants.add(new Place("Irish Pub", "0241 550 400", R.drawable.irish_pub, "44.181051", "28.652222"));
-        restaurants.add(new Place("Toscana", "0241 616 360", R.drawable.toscana, "44.182873", "28.649179"));
-        restaurants.add(new Place("Chevalet", "0721 421 501", R.drawable.chevalet, "44.264257", "28.620457"));
-        restaurants.add(new Place("Pizzico", "0241 615 555", R.drawable.pizzico, "44.174367", "28.658540"));
-        restaurants.add(new Place("London Pub", "0341 417 190", R.drawable.london_pub, "44.177793", "28.653477"));
-        restaurants.add(new Place("Crazy", "0726 779 292", R.drawable.crazy, "44.182251", "28.649841"));
-        restaurants.add(new Place("La Dolce Vita", "0241 547 740", R.drawable.la_dolce_vita, "44.208699", "28.642968"));
-        restaurants.add(new Place("Integra", "0241 691 973", R.drawable.integra, "44.202167", "28.628053"));
-        restaurants.add(new Place("La Scoica", " 0727 726 422", R.drawable.la_scoica, "44.193216", "28.649577"));
+        restaurants.add(new Place(R.string.rest_marco_polo, R.string.number_marco_polo, R.drawable.marco_polo, R.string.latitude_marco_polo, R.string.longitude_marco_polo));
+        restaurants.add(new Place(R.string.rest_irish, R.string.number_irish, R.drawable.irish_pub, R.string.latitude_irish, R.string.longitude_irish));
+        restaurants.add(new Place(R.string.rest_toscana, R.string.number_toscana, R.drawable.toscana, R.string.latitude_toscana, R.string.longitude_toscana));
+        restaurants.add(new Place(R.string.rest_chevalet, R.string.number_chevalet, R.drawable.chevalet, R.string.latitude_chevalet, R.string.longitude_chevalet));
+        restaurants.add(new Place(R.string.rest_pizzico, R.string.number_pizzico, R.drawable.pizzico, R.string.latitude_pizzico, R.string.longitude_pizzico));
+        restaurants.add(new Place(R.string.rest_london, R.string.number_london, R.drawable.london_pub, R.string.latitude_london, R.string.longitude_london));
+        restaurants.add(new Place(R.string.rest_crazy, R.string.number_crazy, R.drawable.crazy, R.string.latitude_crazy, R.string.longitude_crazy));
+        restaurants.add(new Place(R.string.rest_dolce, R.string.number_dolce, R.drawable.la_dolce_vita, R.string.latitude_dolce, R.string.longitude_dolce));
+        restaurants.add(new Place(R.string.rest_integra, R.string.number_integra, R.drawable.integra, R.string.latitude_integra, R.string.longitude_integra));
+        restaurants.add(new Place(R.string.rest_scoica, R.string.number_scoica, R.drawable.la_scoica, R.string.latitude_scoica, R.string.longitude_scoica));
 
         final PlaceAdapter pAdapter = new PlaceAdapter(this, restaurants);
 

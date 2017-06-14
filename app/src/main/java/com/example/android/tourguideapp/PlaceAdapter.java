@@ -43,11 +43,11 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         preview.setImageResource(currentPlace.getImageId());
 
         TextView name = (TextView) listItemView.findViewById(R.id.name);
-        name.setText(currentPlace.getName());
+        name.setText(getContext().getString(currentPlace.getName()));
 
         final TextView phoneNumber = (TextView) listItemView.findViewById(R.id.phone_number);
         if(currentPlace.hasPhoneNumber()){
-            phoneNumber.setText(currentPlace.getPhoneNumber());
+            phoneNumber.setText(getContext().getString(currentPlace.getPhoneNumber()));
             phoneNumber.setVisibility(View.VISIBLE);
         }
         else{
@@ -68,7 +68,7 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
             @Override
             public void onClick(View v) {
 
-                Uri gmmIntentUri = Uri.parse("geo:<" + currentPlace.getLatitude()  + ">,<" + currentPlace.getLongitude() + ">?q=<" + currentPlace.getLatitude()  + ">,<" + currentPlace.getLongitude() + ">(" + currentPlace.getName() + ")");
+                Uri gmmIntentUri = Uri.parse("geo:<" + getContext().getString(currentPlace.getLatitude())  + ">,<" + getContext().getString(currentPlace.getLongitude()) + ">?q=<" + getContext().getString(currentPlace.getLatitude())  + ">,<" + getContext().getString(currentPlace.getLongitude()) + ">(" + getContext().getString(currentPlace.getName()) + ")");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 getContext().startActivity(mapIntent);

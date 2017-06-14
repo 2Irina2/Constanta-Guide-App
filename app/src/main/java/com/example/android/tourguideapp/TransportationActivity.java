@@ -18,17 +18,17 @@ public class TransportationActivity extends AppCompatActivity {
         setContentView(R.layout.transportation_list);
 
         final ArrayList<Bus> buses = new ArrayList<Bus>();
-        buses.add(new Bus("Line 1", R.drawable.route_1));
-        buses.add(new Bus("Line 2", R.drawable.route_2));
-        buses.add(new Bus("Line 3", R.drawable.route_3));
-        buses.add(new Bus("Line 5", R.drawable.route_5));
-        buses.add(new Bus("Line 40", R.drawable.route_40));
-        buses.add(new Bus("Line 42", R.drawable.route_42));
-        buses.add(new Bus("Line 43", R.drawable.route_43));
-        buses.add(new Bus("Line 44", R.drawable.route_44));
-        buses.add(new Bus("Line 48", R.drawable.route_48));
-        buses.add(new Bus("Line 51", R.drawable.route_51));
-        buses.add(new Bus("Line 100", R.drawable.route_100));
+        buses.add(new Bus(R.string.line_1, R.drawable.route_1));
+        buses.add(new Bus(R.string.line_2, R.drawable.route_2));
+        buses.add(new Bus(R.string.line_3, R.drawable.route_3));
+        buses.add(new Bus(R.string.line_5, R.drawable.route_5));
+        buses.add(new Bus(R.string.line_40, R.drawable.route_40));
+        buses.add(new Bus(R.string.line_42, R.drawable.route_42));
+        buses.add(new Bus(R.string.line_43, R.drawable.route_43));
+        buses.add(new Bus(R.string.line_44, R.drawable.route_44));
+        buses.add(new Bus(R.string.line_48, R.drawable.route_48));
+        buses.add(new Bus(R.string.line_51, R.drawable.route_51));
+        buses.add(new Bus(R.string.line_100, R.drawable.route_100));
 
         final BusAdapter bAdapter = new BusAdapter(this, buses);
 

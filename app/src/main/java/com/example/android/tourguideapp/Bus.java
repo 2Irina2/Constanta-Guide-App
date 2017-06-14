@@ -5,16 +5,16 @@ package com.example.android.tourguideapp;
  */
 
 public class Bus {
-    private String mBusNumber;
+    private int mBusNumberId;
     private int mRouteResId;
 
-    public Bus(String busNumber, int routeResId){
-        mBusNumber = busNumber;
+    public Bus(int busNumber, int routeResId){
+        mBusNumberId = busNumber;
         mRouteResId = routeResId;
     }
 
-    public String getBusNumber(){
-        return mBusNumber;
+    public int getBusNumber(){
+        return mBusNumberId;
     }
     public int getRouteResId(){
         return mRouteResId;

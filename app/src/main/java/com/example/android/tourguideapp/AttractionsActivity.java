@@ -25,12 +25,12 @@ public class AttractionsActivity extends AppCompatActivity {
         setContentView(R.layout.normal_list);
 
         final ArrayList<Place> attractions = new ArrayList<Place>();
-        attractions.add(new Place("Mamaia Beach", R.drawable.mamaia, "44.279085", "28.621983"));
-        attractions.add(new Place("Cazino", R.drawable.cazino, "44.170480", "28.663553"));
-        attractions.add(new Place("The Mosque", R.drawable.mosque, "44.173283", "28.6596882707"));
-        attractions.add(new Place("Tomis Harbour", R.drawable.harbour, "44.175557", "28.661223"));
-        attractions.add(new Place("Ovidiu Square", R.drawable.ovidiu_square, "44.174217", "28.658076"));
-        attractions.add(new Place("Saint Paul and Peter Cathedral", R.drawable.catedrala, "44.171234", "28.660967"));
+        attractions.add(new Place(R.string.attraction_mamaia_beach, R.drawable.mamaia, R.string.latitude_mamaia_beach, R.string.longitude_mamaia_beach));
+        attractions.add(new Place(R.string.attraction_cazino, R.drawable.cazino, R.string.latitude_cazino, R.string.longitude_cazino));
+        attractions.add(new Place(R.string.attraction_the_mosque, R.drawable.mosque, R.string.latitude_the_mosque, R.string.longitude_the_mosque));
+        attractions.add(new Place(R.string.attraction_tomis_harbour, R.drawable.harbour, R.string.latitude_tomis_harbour, R.string.longitude_tomis_harbour));
+        attractions.add(new Place(R.string.attraction_ovidiu_square, R.drawable.ovidiu_square, R.string.latitude_ovidiu_square, R.string.longitude_ovidiu_square));
+        attractions.add(new Place(R.string.attraction_cathedral, R.drawable.catedrala, R.string.latitude_cathedral, R.string.longitude_cathedral));
 
         final PlaceAdapter pAdapter = new PlaceAdapter(this, attractions);
 

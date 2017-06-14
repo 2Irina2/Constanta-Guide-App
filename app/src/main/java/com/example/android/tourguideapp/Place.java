@@ -5,50 +5,50 @@ package com.example.android.tourguideapp;
  */
 
 public class Place {
-    private static final String NO_NUMBER_PROVIDED = "0";
+    private static final int NO_NUMBER_PROVIDED = 0;
 
-    private String mName;
-    private String mPhoneNumber = NO_NUMBER_PROVIDED;
+    private int mNameId;
+    private int mPhoneNumberId = NO_NUMBER_PROVIDED;
     private int mImageId;
-    private String mLatitude;
-    private String mLongitude;
+    private int mLatitudeId;
+    private int mLongitudeId;
 
-    public Place(String name, String phoneNumber, int imageId, String latitude, String longitude){
-        mName = name;
-        mPhoneNumber = phoneNumber;
+    public Place(int name, int phoneNumber, int imageId, int latitude, int longitude){
+        mNameId = name;
+        mPhoneNumberId = phoneNumber;
         mImageId = imageId;
-        mLatitude = latitude;
-        mLongitude = longitude;
+        mLatitudeId = latitude;
+        mLongitudeId = longitude;
     }
 
-    public Place(String name, int imageId, String latitude, String longitude){
-        mName = name;
+    public Place(int name, int imageId, int latitude, int longitude){
+        mNameId = name;
         mImageId = imageId;
-        mLatitude = latitude;
-        mLongitude = longitude;
+        mLatitudeId = latitude;
+        mLongitudeId = longitude;
     }
 
-    public String getName(){
-        return mName;
+    public int getName(){
+        return mNameId;
     }
 
-    public String getPhoneNumber(){
-        return mPhoneNumber;
+    public int getPhoneNumber(){
+        return mPhoneNumberId;
     }
 
     public int getImageId(){
         return mImageId;
     }
 
-    public String getLatitude(){
-        return mLatitude;
+    public int getLatitude(){
+        return mLatitudeId;
     }
 
-    public String getLongitude(){
-        return mLongitude;
+    public int getLongitude(){
+        return mLongitudeId;
     }
 
     public boolean hasPhoneNumber(){
-        return mPhoneNumber != NO_NUMBER_PROVIDED;
+        return mPhoneNumberId != NO_NUMBER_PROVIDED;
     }
 }
